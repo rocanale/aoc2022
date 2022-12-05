@@ -9,8 +9,6 @@ int main(int argc, const char *argv[]){
 
     FILE *inputf;
     int sum_cals = 0;
-    int read_status = 0;
-    int current_cals;
     int max_cals = 0;
     char filename[MAX_STRING];
     char line[MAX_LINE];
@@ -33,7 +31,7 @@ int main(int argc, const char *argv[]){
             sum_cals += atoi(line);
         }
     }
-    
+
     if (sum_cals > max_cals){
         max_cals = sum_cals;
     }
